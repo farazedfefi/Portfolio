@@ -14,7 +14,7 @@
     <img src="profile.jpg" alt="Muhammad Faraz Malik" class="profile-img">
     <div class="header-content">
       <h1>Muhammad Faraz Malik</h1>
-      <p class="tagline">AI & Robotics Engineer | LLM Pipelines | ROS2 | Automation</p>
+      <p class="tagline">Computer Engineering Student | AI Systems | Robotics Simulation | Agentic AI</p>
 
       <nav class="main-nav">
         <ul>
@@ -35,10 +35,7 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        Computer Engineering student at UET Taxila (2022–2026) with a focus on AI, robotics, and intelligent automation.
-        I build end-to-end pipelines — from ROS2 robot data conversion for imitation learning to LLM-powered research automation — and have hands-on experience in machine learning, signal processing, and embedded systems.
-        Proficient in Python, PyTorch, LangGraph, and ROS2, I enjoy bridging rigorous engineering theory with practical, deployable solutions.
-        Open to internships, research collaborations, and full-time roles in AI/ML, robotics, or software engineering.
+        Computer Engineering student at UET Taxila with practical experience in AI systems, reinforcement learning, robotics simulation, agentic AI, computer vision, networking, and automation. I work with Python, ROS 2, Gazebo, AirSim, LangGraph, local LLM workflows, APIs, and deployment-oriented engineering. My projects include multi-model video fusion, drone reinforcement learning, ROS 2/Gazebo simulation, agentic medical AI workflows, and automation systems. I am interested in internships and entry-level roles in AI/ML, robotics, software engineering, and intelligent automation.
       </p>
     </div>
   </section>
@@ -46,54 +43,87 @@
   <section id="projects" data-aos="fade-up">
     <div class="container">
       <h2>Projects</h2>
+
+      <h3 class="projects-group-label">Featured Projects</h3>
       <div class="projects-grid">
 
-        <!-- ── NEW: Parque ── -->
         <div class="project-card">
-          <h3>Parque — ROS2 to LeRobot Dataset Pipeline</h3>
-          <p>A modular Python pipeline that converts ROS2 bag recordings of robotic manipulation tasks into the LeRobot dataset format, enabling seamless training of imitation-learning policies. Automates extraction of joint states, camera streams, and synchronization metadata, and handles episode segmentation and frame alignment across sensors.</p>
+          <h3>AI Driving Scene Fusion and Decision System</h3>
+          <p>Multi-model deep learning system that fuses video feeds from multiple cameras to analyze driving scenes, detect objects and hazards, and support autonomous decision-making. Integrates CNN-based visual perception pipelines with a decision layer for real-world autonomous driving applications.</p>
           <div class="tech-tags">
-            <span>Python</span><span>ROS2</span><span>LeRobot</span><span>PyTorch</span><span>Robotics</span>
-          </div>
-          <div class="proj-btns single-btn">
-            <span class="no-code">Code / dataset samples coming soon</span>
+            <span>Python</span><span>Computer Vision</span><span>CNN</span><span>Deep Learning</span><span>Sensor Fusion</span><span>Autonomous Driving</span>
           </div>
         </div>
 
-        <!-- ── NEW: AutoPRISMA ── -->
         <div class="project-card">
-          <h3>AutoPRISMA — Automated Systematic Review Pipeline</h3>
-          <p>End-to-end research automation system that retrieves papers from OpenAlex and PubMed, performs AI-driven deduplication, title/abstract screening, full-text bias assessment (ROBINS-I / Cochrane), and evidence synthesis — all orchestrated with LangGraph and locally-hosted Ollama LLMs. Outputs PRISMA-compliant reports in DOCX, PDF, and Markdown, reducing days of manual review work to hours.</p>
+          <h3>Drone Reinforcement Learning Navigation in AirSim</h3>
+          <p>Reinforcement learning agent trained to navigate a drone autonomously in Microsoft AirSim, a high-fidelity physics simulation environment. Implements Q-learning and policy optimization for obstacle avoidance and target-reaching tasks in complex 3D environments.</p>
           <div class="tech-tags">
-            <span>Python</span><span>LangGraph</span><span>Ollama</span><span>OpenAlex API</span><span>PubMed API</span><span>NLP</span>
-          </div>
-          <div class="proj-btns single-btn">
-            <span class="no-code">Private research project</span>
+            <span>Python</span><span>AirSim</span><span>Reinforcement Learning</span><span>Q-Learning</span><span>Drone Simulation</span><span>Autonomous Navigation</span>
           </div>
         </div>
 
-        <!-- ── Existing projects ── -->
         <div class="project-card">
-          <h3>University Management System</h3>
-          <p>Comprehensive web-based platform for automating academic, administrative, and financial operations at universities. Features centralized data, secure role-based access, and real-time analytics for all stakeholders.</p>
+          <h3>ROS 2 and Gazebo Drone Simulation Work</h3>
+          <p>Robot simulation and control work using ROS 2 and Gazebo, including drone modelling, sensor integration, and autonomous flight behavior. Covers topics, nodes, launch files, and coordinate-frame management in a realistic simulated environment.</p>
           <div class="tech-tags">
-            <span>Python</span><span>Django</span><span>SQL Server</span><span>HTML/CSS</span>
+            <span>ROS 2</span><span>Gazebo</span><span>Python</span><span>Drone Simulation</span><span>Autonomous Navigation</span><span>Robot Control</span>
           </div>
-          <div class="proj-btns">
-            <a class="btn code" href="https://github.com/farazedfefi/Portfolio/tree/main/Projects/DBMS%20PROJECT/dbms%20project" target="_blank">View Code</a>
-            <a class="btn report" href="https://github.com/farazedfefi/Portfolio/blob/main/Projects/DBMS%20PROJECT/Project_Report_DBMS.pdf" target="_blank">View Report</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Agentic Medical AI Workflow with Local LLM</h3>
+          <p>End-to-end agentic AI pipeline for medical information processing using locally hosted large language models. Orchestrated with LangGraph, the workflow handles medical query understanding, evidence retrieval, and structured response generation without relying on cloud APIs.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>LangGraph</span><span>Local LLM</span><span>Agentic AI</span><span>Medical AI</span><span>REST APIs</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Minecraft Q-Table Reinforcement Learning Agent</h3>
+          <p>Reinforcement learning agent using Q-table methods to navigate and accomplish tasks in a Minecraft-like grid environment. Demonstrates core Q-learning fundamentals — state-action value estimation, epsilon-greedy exploration, and policy convergence — in a visual, step-by-step setting.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>Q-Learning</span><span>Reinforcement Learning</span><span>Agent</span><span>Game AI</span>
           </div>
         </div>
 
         <div class="project-card">
           <h3>Speech Emotion Recognition Using Machine Learning</h3>
-          <p>Deep learning system using Convolutional Neural Networks to classify speech into seven distinct emotions. Utilizes MFCC features and the TESS dataset for robust, real-time emotion inference and improved human–computer interaction.</p>
+          <p>Deep learning system using Convolutional Neural Networks to classify speech into seven distinct emotions. Utilises MFCC features and the TESS dataset for robust, real-time emotion inference and improved human–computer interaction.</p>
           <div class="tech-tags">
             <span>Python</span><span>PyTorch</span><span>CNN</span><span>MFCC</span><span>ML</span>
           </div>
           <div class="proj-btns">
             <a class="btn code" href="https://github.com/farazedfefi/Portfolio/blob/main/Projects/SPEECH%20EMOTION%20RECOGNITION%20USING%20ML" target="_blank">View Code</a>
             <a class="btn report" href="https://github.com/farazedfefi/Portfolio/blob/main/Projects/SPEECH%20EMOTION%20RECOGNITION%20USING%20ML/Machine%20Learning%20Project%20Report.pdf" target="_blank">View Report</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Remote Software Deployment Automation</h3>
+          <p>Centralised, automated system for deploying software from a server to multiple client PCs using PDQ Deploy and Active Directory group policies. Enhanced security, auditability, and scalability for large-scale enterprise IT environments.</p>
+          <div class="tech-tags">
+            <span>PDQ Deploy</span><span>Active Directory</span><span>Windows Server</span><span>Networking</span>
+          </div>
+          <div class="proj-btns single-btn">
+            <a class="btn report" href="https://github.com/farazedfefi/Portfolio/blob/main/Projects/CCN%20remote%20installer%20using%20pdq%20deploy.pdf" target="_blank">View Report</a>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="projects-group-label" style="margin-top:48px;">Additional Projects</h3>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>MIPS Processor (Single-Cycle)</h3>
+          <p>Designed and implemented a single-cycle MIPS processor in Verilog targeting efficient execution of a core MIPS ISA subset. Features a fully modular architecture with dedicated ALU, register file, control unit, and memory components, verified through comprehensive testbench simulation.</p>
+          <div class="tech-tags">
+            <span>Verilog</span><span>Vivado</span><span>MIPS ISA</span><span>Digital Design</span>
+          </div>
+          <div class="proj-btns">
+            <a class="btn code" href="https://github.com/farazedfefi/Portfolio/tree/main/Projects/DSD%20CEP/22-cp-47%20CEP" target="_blank">View Code</a>
+            <a class="btn report" href="https://github.com/farazedfefi/Portfolio/blob/main/Projects/DSD%20CEP/DSD%20PROJECT%20REPORT.pdf" target="_blank">View Report</a>
           </div>
         </div>
 
@@ -110,20 +140,8 @@
         </div>
 
         <div class="project-card">
-          <h3>MIPS Processor (Single-Cycle)</h3>
-          <p>Designed and implemented a single-cycle MIPS processor in Verilog targeting efficient execution of a core MIPS ISA subset. Features a fully modular architecture with dedicated ALU, register file, control unit, and memory components, verified through comprehensive testbench simulation.</p>
-          <div class="tech-tags">
-            <span>Verilog</span><span>Vivado</span><span>MIPS ISA</span><span>Digital Design</span>
-          </div>
-          <div class="proj-btns">
-            <a class="btn code" href="https://github.com/farazedfefi/Portfolio/tree/main/Projects/DSD%20CEP/22-cp-47%20CEP" target="_blank">View Code</a>
-            <a class="btn report" href="https://github.com/farazedfefi/Portfolio/blob/main/Projects/DSD%20CEP/DSD%20PROJECT%20REPORT.pdf" target="_blank">View Report</a>
-          </div>
-        </div>
-
-        <div class="project-card">
           <h3>Free Space Optical Communication System</h3>
-          <p>Designed and simulated a high-speed Free Space Optical (FSO) wireless link in OptiSystem. Analyzed BER and received power under varying weather and atmospheric turbulence conditions, demonstrating robust signal quality over kilometer-scale distances.</p>
+          <p>Designed and simulated a high-speed Free Space Optical (FSO) wireless link in OptiSystem. Analysed BER and received power under varying weather and atmospheric turbulence conditions, demonstrating robust signal quality over kilometre-scale distances.</p>
           <div class="tech-tags">
             <span>OptiSystem</span><span>FSO</span><span>Optical Comms</span>
           </div>
@@ -134,13 +152,30 @@
         </div>
 
         <div class="project-card">
-          <h3>Remote Software Deployment Automation</h3>
-          <p>Centralized, automated system for deploying software from a server to multiple client PCs using PDQ Deploy and Active Directory group policies. Enhanced security, auditability, and scalability for large-scale enterprise IT environments.</p>
+          <h3>University Management System</h3>
+          <p>Comprehensive web-based platform for automating academic, administrative, and financial operations at universities. Features centralised data, secure role-based access, and real-time analytics for all stakeholders.</p>
           <div class="tech-tags">
-            <span>PDQ Deploy</span><span>Active Directory</span><span>Windows Server</span>
+            <span>Python</span><span>Django</span><span>SQL Server</span><span>HTML/CSS</span>
           </div>
-          <div class="proj-btns single-btn">
-            <a class="btn report" href="https://github.com/farazedfefi/Portfolio/blob/main/Projects/CCN%20remote%20installer%20using%20pdq%20deploy.pdf" target="_blank">View Report</a>
+          <div class="proj-btns">
+            <a class="btn code" href="https://github.com/farazedfefi/Portfolio/tree/main/Projects/DBMS%20PROJECT/dbms%20project" target="_blank">View Code</a>
+            <a class="btn report" href="https://github.com/farazedfefi/Portfolio/blob/main/Projects/DBMS%20PROJECT/Project_Report_DBMS.pdf" target="_blank">View Report</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Parque — ROS 2 to LeRobot Dataset Pipeline</h3>
+          <p>A modular Python pipeline that converts ROS 2 bag recordings of robotic manipulation tasks into the LeRobot dataset format, enabling seamless training of imitation-learning policies. Automates extraction of joint states, camera streams, and synchronisation metadata, and handles episode segmentation and frame alignment across sensors.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>ROS 2</span><span>LeRobot</span><span>PyTorch</span><span>Robotics</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>AutoPRISMA — Automated Systematic Review Pipeline</h3>
+          <p>End-to-end research automation system that retrieves papers from OpenAlex and PubMed, performs AI-driven deduplication, title/abstract screening, full-text bias assessment (ROBINS-I / Cochrane), and evidence synthesis — all orchestrated with LangGraph and locally-hosted Ollama LLMs. Outputs PRISMA-compliant reports in DOCX, PDF, and Markdown, reducing days of manual review work to hours.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>LangGraph</span><span>Ollama</span><span>OpenAlex API</span><span>PubMed API</span><span>NLP</span>
           </div>
         </div>
 
@@ -185,54 +220,57 @@
   <div class="container">
     <h2>Skills</h2>
 
-    <h3 class="skills-category">Programming Languages</h3>
+    <h3 class="skills-category">Programming</h3>
     <ul class="skills-list">
       <li>Python</li>
       <li>C++</li>
-      <li>MATLAB</li>
-      <li>SQL</li>
-      <li>HTML / CSS</li>
-      <li>Assembly</li>
+      <li>Java</li>
       <li>Verilog</li>
+      <li>HTML</li>
+      <li>CSS</li>
     </ul>
 
-    <h3 class="skills-category">AI &amp; Machine Learning</h3>
+    <h3 class="skills-category">AI / ML</h3>
     <ul class="skills-list">
-      <li>PyTorch</li>
-      <li>CNN / Deep Learning</li>
-      <li>MFCC &amp; Signal Features</li>
+      <li>Reinforcement Learning</li>
+      <li>Q-Learning</li>
+      <li>CNNs</li>
+      <li>MFCC</li>
+      <li>STFT</li>
+      <li>Agentic AI</li>
+      <li>Local LLM Orchestration</li>
+    </ul>
+
+    <h3 class="skills-category">Robotics / Simulation</h3>
+    <ul class="skills-list">
+      <li>ROS 2</li>
+      <li>Gazebo</li>
+      <li>AirSim</li>
+      <li>Drone Simulation</li>
+      <li>Autonomous Navigation</li>
+      <li>MATLAB</li>
+      <li>Simulink</li>
+    </ul>
+
+    <h3 class="skills-category">Tools / Systems</h3>
+    <ul class="skills-list">
       <li>LangGraph</li>
-      <li>Ollama / Local LLMs</li>
-      <li>NLP &amp; Text Processing</li>
-      <li>Transformers</li>
-    </ul>
-
-    <h3 class="skills-category">Robotics &amp; Automation</h3>
-    <ul class="skills-list">
-      <li>ROS2</li>
-      <li>LeRobot</li>
-      <li>Imitation Learning</li>
-      <li>Arduino / Embedded C++</li>
-      <li>Microcontroller Programming</li>
-    </ul>
-
-    <h3 class="skills-category">Tools &amp; Platforms</h3>
-    <ul class="skills-list">
-      <li>Git / GitHub</li>
-      <li>Vivado (Xilinx)</li>
+      <li>REST APIs</li>
+      <li>Linux</li>
+      <li>Windows</li>
       <li>OptiSystem</li>
-      <li>SQL Server</li>
-      <li>Cisco Packet Tracer</li>
-      <li>PDQ Deploy / Active Directory</li>
+      <li>Arduino</li>
+      <li>AutoCAD</li>
+      <li>PDQ Deploy</li>
+      <li>Active Directory</li>
     </ul>
 
-    <h3 class="skills-category">Soft Skills</h3>
+    <h3 class="skills-category">Core Areas</h3>
     <ul class="skills-list">
-      <li>Analytical Problem Solving</li>
-      <li>Technical Documentation</li>
-      <li>Research &amp; Literature Review</li>
-      <li>Time Management</li>
-      <li>Team Collaboration</li>
+      <li>Computer Vision</li>
+      <li>Signal Processing</li>
+      <li>Networking</li>
+      <li>Automation</li>
     </ul>
   </div>
 </section>
@@ -242,7 +280,7 @@
     <div class="container">
       <h2>Education</h2>
       <div class="education-item">
-        <h3>B.Sc. Computer Engineering</h3>
+        <h3>BS Computer Engineering</h3>
         <p>University of Engineering and Technology (UET) Taxila<br>September 2022 – September 2026 (expected)</p>
         <p>CGPA: 3.22 | Matric: 96% | FSc: 80%</p>
         <p>Hands-on experience in labs, collaborative tech projects, and self-initiated learning in AI, digital logic, and microcontrollers.</p>
