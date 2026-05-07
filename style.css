@@ -388,4 +388,29 @@ section[id]::before {
   }
 }
 
+/* ── Tech tag chips on project cards ── */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 10px 0 12px 0;
+}
+.tech-tags span {
+  background: rgba(79,195,247,0.13);
+  color: #4fc3f7;
+  border: 1px solid rgba(79,195,247,0.35);
+  border-radius: 12px;
+  padding: 3px 11px;
+  font-size: 0.82em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
 
+/* ── Skills section sub-headings ── */
+.skills-category {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #b3e5fc;
+  font-size: 1.05em;
+  font-weight: 600;
+}
