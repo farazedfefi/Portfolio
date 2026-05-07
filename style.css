@@ -146,7 +146,7 @@ header .container {
 
 .container {
   width: 92%;
-  max-width: 1040px;
+  max-width: 960px;
   margin: auto;
   padding: 16px 0;
 }

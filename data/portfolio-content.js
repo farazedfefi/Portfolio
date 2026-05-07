@@ -34,15 +34,15 @@ window.portfolioContent = {
       title: 'AutoPRISMA',
       summary: 'Automation-focused project streamlining PRISMA-style research/screening workflows with reproducible processing and cleaner review operations.',
       stack: 'Python, Automation, Data Processing',
-      github: '#',
-      details: '#'
+      github: null,
+      details: null
     },
     {
       title: 'PARQUE: ROS2 to LeRobot Dataset Conversion',
       summary: 'Converts ROS2 robot logs into LeRobot-compatible datasets to make robotics data reusable for training and benchmarking learning-based control pipelines.',
       stack: 'ROS2, Python, Robotics Data Engineering, LeRobot',
-      github: '#',
-      details: '#'
+      github: null,
+      details: null
     }
   ]
 };

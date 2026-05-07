@@ -16,4 +16,4 @@ Update this file to keep these sections aligned with the latest resume:
 - Contact
 - Newly added project cards (AutoPRISMA and PARQUE)
 
-For project links that are not public yet, keep `"#"` placeholders and replace them once links are available.
+For project links that are not public yet, keep `null` placeholders and replace them once links are available.

@@ -30,8 +30,13 @@ topBtn.onclick = function() {
 
 function renderList(listId, items) {
   const list = document.getElementById(listId);
-  if (!list || !Array.isArray(items) || !items.length) return;
-  list.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+  if (!list || !Array.isArray(items) || items.length === 0) return;
+  list.innerHTML = '';
+  items.forEach((item) => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    list.appendChild(li);
+  });
 }
 
 function renderResumeContent() {
@@ -65,17 +70,57 @@ function renderProjectCards() {
   projects.forEach((project) => {
     const card = document.createElement('div');
     card.className = 'project-card';
-    const githubHref = project.github || '#';
-    const detailsHref = project.details || '#';
-    card.innerHTML = `
-      <h3>${project.title}</h3>
-      <p>${project.summary}</p>
-      <p class="project-stack"><strong>Tech:</strong> ${project.stack}</p>
-      <div class="proj-btns">
-        <a class="btn code" href="${githubHref}" target="_blank" rel="noopener noreferrer">${githubHref === '#' ? 'GitHub (Add Link)' : 'View Code'}</a>
-        <a class="btn report" href="${detailsHref}" target="_blank" rel="noopener noreferrer">${detailsHref === '#' ? 'Details (Add Link)' : 'View Details'}</a>
-      </div>
-    `;
+    const githubHref = project.github || '';
+    const detailsHref = project.details || '';
+
+    const title = document.createElement('h3');
+    title.textContent = project.title;
+
+    const summary = document.createElement('p');
+    summary.textContent = project.summary;
+
+    const stack = document.createElement('p');
+    stack.className = 'project-stack';
+    const stackLabel = document.createElement('strong');
+    stackLabel.textContent = 'Tech: ';
+    stack.appendChild(stackLabel);
+    stack.append(document.createTextNode(project.stack));
+
+    const btnRow = document.createElement('div');
+    btnRow.className = 'proj-btns';
+
+    const githubBtn = document.createElement('a');
+    githubBtn.className = 'btn code';
+    githubBtn.textContent = githubHref ? 'View Code' : 'GitHub (Add Link)';
+    if (githubHref) {
+      githubBtn.href = githubHref;
+      githubBtn.target = '_blank';
+      githubBtn.rel = 'noopener noreferrer';
+    } else {
+      githubBtn.href = '';
+      githubBtn.setAttribute('aria-disabled', 'true');
+      githubBtn.addEventListener('click', (event) => event.preventDefault());
+    }
+
+    const detailsBtn = document.createElement('a');
+    detailsBtn.className = 'btn report';
+    detailsBtn.textContent = detailsHref ? 'View Details' : 'Details (Add Link)';
+    if (detailsHref) {
+      detailsBtn.href = detailsHref;
+      detailsBtn.target = '_blank';
+      detailsBtn.rel = 'noopener noreferrer';
+    } else {
+      detailsBtn.href = '';
+      detailsBtn.setAttribute('aria-disabled', 'true');
+      detailsBtn.addEventListener('click', (event) => event.preventDefault());
+    }
+
+    btnRow.appendChild(githubBtn);
+    btnRow.appendChild(detailsBtn);
+    card.appendChild(title);
+    card.appendChild(summary);
+    card.appendChild(stack);
+    card.appendChild(btnRow);
     grid.appendChild(card);
   });
 }
