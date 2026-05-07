@@ -22,12 +22,13 @@ body {
   padding: 0;
   background: linear-gradient(120deg, #232526 0%, #414345 100%);
   color: #f0f0f0;
+  line-height: 1.65;
 }
 
 header {
   background: linear-gradient(120deg, #232526 0%, #414345 100%);
   color: #fff;
-  padding: 48px 0 0 0;
+  padding: 48px 0 24px 0;
   box-shadow: 0 2px 12px rgba(0,0,0,0.13);
   position: relative;
   overflow: hidden;
@@ -39,6 +40,15 @@ header::before {
   background: radial-gradient(circle at 20% 40%, rgba(79,195,247,0.10) 0%, rgba(79,195,247,0.00) 70%),
               radial-gradient(circle at 80% 20%, rgba(79,195,247,0.08) 0%, rgba(79,195,247,0.00) 60%);
   z-index: 0;
+}
+header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: rgba(79,195,247,0.24);
 }
 
 nav.main-nav {
@@ -84,7 +94,7 @@ header .container {
   justify-content: flex-start;
   flex-wrap: wrap;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 24px;
 }
 
 .header-content {
@@ -136,21 +146,22 @@ header .container {
 
 .container {
   width: 92%;
-  max-width: 960px;
+  max-width: 1040px;
   margin: auto;
   padding: 16px 0;
 }
 
 .about, section {
-  margin: 60px 0 0 0;
+  margin: 0;
+  padding: 56px 0 0 0;
 }
 
 h2 {
   margin: 0 0 12px 0;
-  font-size: 1.6em;
+  font-size: 1.8em;
   border-bottom: 2px solid #4fc3f7;
   display: inline-block;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
   color: #4fc3f7;
 }
 
@@ -162,10 +173,10 @@ h2 {
 }
 
 .project-card {
-  background: #232526;
-  border-radius: 13px;
+  background: rgba(35, 37, 38, 0.92);
+  border-radius: 14px;
   box-shadow: 0 2px 14px rgba(79,195,247,0.10);
-  padding: 22px 20px 18px 20px;
+  padding: 24px 22px 20px 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -188,10 +199,16 @@ h2 {
 
 .project-card p {
   margin-top: 0;
-  font-size: 1em;
+  font-size: 0.98em;
   min-height: 48px;
   color: #e6e6e6;
   flex-grow: 1;
+}
+
+.project-stack {
+  margin: 6px 0 0;
+  color: #b3e5fc;
+  font-size: 0.9em;
 }
 
 .proj-btns {
@@ -301,10 +318,23 @@ footer {
   letter-spacing: 0.01em;
 }
 
-
-
 nav.main-nav {
   margin-left: 70px; /* Move nav bar right to clear profile image */
+}
+
+.skills-heading {
+  margin-top: 24px;
+  color: #b3e5fc;
+}
+
+.resume-note {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-left: 3px solid #4fc3f7;
+  background: rgba(79,195,247,0.09);
+  border-radius: 8px;
+  color: #d8effb;
+  font-size: 0.95em;
 }
 
 @media (max-width: 768px) {
@@ -337,15 +367,11 @@ nav.main-nav {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 360px; /* Adjust this to match your header height */
+  scroll-padding-top: 24px;
 }
 
 section[id]::before {
-  content: "";
-  display: block;
-  height: 60px;
-  margin-top: -100px;
-  visibility: hidden;
+  content: none;
 }
 
 

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Muhammad Faraz Malik's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
 <header>
   <div class="container">
     <img src="profile.jpg" alt="Muhammad Faraz Malik" class="profile-img">
@@ -25,23 +28,22 @@
 
     </div>
   </div>
-<!-- AOS Animation Library -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </header>
   
   <section id="about" class="about" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
-      <p>
-        I am a Computer Engineering student at UET Taxila, passionate about AI, machine learning, and core computer engineering. I value precision, logical thinking, and continuous learning, and I enjoy applying theory to real-world problems. My strengths include a solid foundation in C++, Python, MATLAB, and hands-on experience in digital systems, automation, and web development. I thrive in collaborative environments, value structured teamwork, and am motivated by curiosity and innovation in technology.
+      <p id="about-summary">
+        Theory-driven engineering learner focused on AI, automation, and practical digital systems. I enjoy turning structured analysis into usable software and hardware outcomes with reliable execution.
       </p>
+      <p id="resume-placeholder" class="resume-note"></p>
     </div>
   </section>
   
   <section id="projects" data-aos="fade-up">
     <div class="container">
       <h2>Projects</h2>
-      <div class="projects-grid">
+      <div class="projects-grid" id="projects-grid">
         <div class="project-card">
           <h3>University Management System</h3>
           <p>Comprehensive web-based platform for automating academic, administrative, and financial operations at universities. Features centralized data, secure access, and real-time analytics for all stakeholders.</p>
@@ -121,8 +123,8 @@
   <div class="container">
     <h2>Skills</h2>
 
-    <h3 style="margin-top: 24px; color: #b3e5fc;">Technical Skills</h3>
-    <ul class="skills-list">
+    <h3 class="skills-heading">Technical Skills</h3>
+    <ul class="skills-list" id="technical-skills">
       <li>C++</li>
       <li>Python</li>
       <li>MATLAB</li>
@@ -135,8 +137,8 @@
       <li>Cisco Packet Tracer</li>
     </ul>
 
-    <h3 style="margin-top: 24px; color: #b3e5fc;">Soft Skills</h3>
-    <ul class="skills-list">
+    <h3 class="skills-heading">Soft Skills</h3>
+    <ul class="skills-list" id="soft-skills">
       <li>Analytical Problem Solving</li>
       <li>Time Management</li>
       <li>Technical Documentation</li>
@@ -149,10 +151,10 @@
     <div class="container">
       <h2>Education</h2>
       <div class="education-item">
-        <h3>B.Sc. Computer Engineering</h3>
-        <p>University of Engineering and Technology (UET) Taxila<br>September 2022 – September 2026 (expected)</p>
-        <p>CGPA: 3.01 | Matric: 96% | FSc: 80%</p>
-        <p>Hands-on experience in labs, collaborative tech projects, and self-initiated learning in AI, digital logic, and microcontrollers.</p>
+        <h3 id="education-degree">B.Sc. Computer Engineering</h3>
+        <p id="education-school">University of Engineering and Technology (UET) Taxila<br>September 2022 – September 2026 (expected)</p>
+        <p id="education-metrics">CGPA: 3.01 | Matric: 96% | FSc: 80%</p>
+        <p id="education-summary">Hands-on experience in labs, collaborative tech projects, and self-initiated learning in AI, digital logic, and microcontrollers.</p>
       </div>
     </div>
   </section>
@@ -163,10 +165,10 @@
       <div class="contact-links">
         <a href="mailto:ifaazu291@gmail.com" class="btn">Email Me</a>
         
-        <a href="https://github.com/MuhammadFarazMalik/Portfolio" class="btn" target="_blank">GitHub</a>
+        <a id="contact-github" href="https://github.com/MuhammadFarazMalik/Portfolio" class="btn" target="_blank">GitHub</a>
 
       </div>
-      <p style="margin-top:10px;">Open to internships, freelance, and full-time roles in software development, AI/ML, or systems programming. Based in Pakistan, open to global opportunities.</p>
+      <p id="contact-note" style="margin-top:10px;">Open to internships, freelance, and full-time roles in software development, AI/ML, or systems programming. Based in Pakistan, open to global opportunities.</p>
     </div>
   </section>
   
@@ -176,6 +178,7 @@
     </div>
   </footer>
   <button id="topBtn" title="Go to top">↑</button>
+  <script src="data/portfolio-content.js"></script>
   <script src="script.js"></script>
 
   <!-- MOBILE WARNING (fully visible, with close button, mobile ONLY) -->
@@ -226,7 +229,6 @@
       };
     }
   </script>
- </script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
